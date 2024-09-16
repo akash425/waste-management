@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .company-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .company-search {
+    grid-column: 1 / 2;
+  }
+  
+  .company-browse {
+    grid-column: 2 / 3;
+  }
+  
+  .company-alerts {
+    grid-column: 3 / 4;
+  }
+  
+  /* Add media queries for responsive design */
+  @media (max-width: 768px) {
+    .company-dashboard {
+      grid-template-columns: 1fr;
+    }
+  }

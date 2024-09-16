@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getFarmers, getCompanies } from './api';
+import CompanyDashboard from './components/CompanyDashboard';
+
 
 function App() {
   const [farmers, setFarmers] = useState([]);
@@ -17,14 +19,16 @@ function App() {
 
   return (
     <div>
-      <h1>Agri Waste Marketplace</h1>
+        <CompanyDashboard />
+
+      {/* <h1>Agri Waste Marketplace</h1>
       <nav>
         <ul>
-          {/* <li><Link to="/">Home</Link></li>
+          <li><Link to="/">Home</Link></li>
           <li><Link to="/farmers">Farmers</Link></li>
-          <li><Link to="/companies">Companies</Link></li> */}
+          <li><Link to="/companies">Companies</Link></li>
         </ul>
-      </nav>
+      </nav> */}
     </div>
   );
 }
